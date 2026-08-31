@@ -1,0 +1,68 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+frontend/*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+frontend/.env.local
+frontend/.env.*.local
+!frontend/.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Local application data - never publish user resumes or analyses
+data/db/*
+!data/db/.gitkeep
+data/uploads/*
+!data/uploads/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+data/embeddings/*
+!data/embeddings/.gitkeep
+
+# Logs and runtime launchd files
+logs/*
+!logs/.gitkeep
+
+# Generated launchd plists may contain local absolute paths
+launchers/*.plist
+
+# OS/editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local screenshots and artifacts
+screenshots/
+playwright-report/
+test-results/
